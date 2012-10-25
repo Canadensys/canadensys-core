@@ -16,7 +16,7 @@ public class StringUtils {
 	 * Removes all accents on characters in a String.
 	 * éàû will return eau
 	 * @param s
-	 * @return
+	 * @return provided String without accent
 	 */
 	public static String unaccent(String s) {
 		if(s == null){

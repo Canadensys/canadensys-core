@@ -23,7 +23,7 @@ import org.apache.commons.io.FilenameUtils;
  */
 public class ZipUtils {
 	
-	public static final String ZIP_EXT = ".zip";
+	public static final String ZIP_EXT = "." + ArchiveStreamFactory.ZIP;
 
 	/**
 	 * Utility function to zip an entire folder.
