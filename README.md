@@ -3,6 +3,16 @@ canadensys-core
 
 Collection of utility functions used by Canadensys projects.
 
+Usage
+-----
+Maven
+```
+<dependency>
+	<groupId>net.canadensys</groupId>
+	<artifactId>canadensys-core</artifactId>
+	<version>1.0</version>
+</dependency>
+```
 
 Dependencies
 ------------
