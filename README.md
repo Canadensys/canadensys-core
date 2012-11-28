@@ -3,6 +3,12 @@ canadensys-core
 
 Collection of utility functions used by Canadensys projects.
 
+Features
+--------
+* Zip an entire folder (and its contents)
+* Generic number parser : T parseNumber(String value, Class<T> targetClass)
+* Roman numerals support
+
 Usage
 -----
 Maven
@@ -10,7 +16,7 @@ Maven
 <dependency>
 	<groupId>net.canadensys</groupId>
 	<artifactId>canadensys-core</artifactId>
-	<version>1.0</version>
+	<version>1.1</version>
 </dependency>
 ```
 
@@ -33,3 +39,7 @@ Unit tests
 ```
 mvn test
 ```
+
+Contributors
+-----------
+* Thoralf Gutierrez - Roman Numerals converter
