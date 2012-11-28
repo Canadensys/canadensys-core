@@ -16,7 +16,7 @@ Maven
 <dependency>
 	<groupId>net.canadensys</groupId>
 	<artifactId>canadensys-core</artifactId>
-	<version>1.1</version>
+	<version>1.1-SNAPSHOT</version>
 </dependency>
 ```
 
