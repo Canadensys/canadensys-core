@@ -63,20 +63,26 @@ public class ZipUtils {
 		return true;
 	}
 	
-	public static boolean unzipFileOrFolder(File zipFilePath, String unzippedFolder){
+	/**
+	 * Unzip a file or a folder
+	 * @param zipFile
+	 * @param unzippedFolder optional, if null the file/folder will be extracted in the same folder as zipFile
+	 * @return
+	 */
+	public static boolean unzipFileOrFolder(File zipFile, String unzippedFolder){
 		InputStream is;
 		ArchiveInputStream in = null;
 		OutputStream out  = null;
 		
-		if(!zipFilePath.isFile()){
+		if(!zipFile.isFile()){
 			return false;
 		}
 		
 		if(unzippedFolder == null){
-			unzippedFolder = FilenameUtils.removeExtension(zipFilePath.getAbsolutePath());
+			unzippedFolder = FilenameUtils.removeExtension(zipFile.getAbsolutePath());
 		}
 		try {
-			is = new FileInputStream(zipFilePath);
+			is = new FileInputStream(zipFile);
 			new File(unzippedFolder).mkdir();
 			
 			in = new ArchiveStreamFactory().createArchiveInputStream(ArchiveStreamFactory.ZIP, is);
