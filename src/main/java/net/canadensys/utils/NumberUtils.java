@@ -17,6 +17,9 @@ public class NumberUtils {
 	 */
 	@SuppressWarnings("unchecked")
 	public static <T> T parseNumber(String value, Class<T> targetClass){
+		if(value == null){
+			return null;
+		}
 		try{
 			if(Integer.class == targetClass){
 				return (T)Integer.valueOf(value);
