@@ -14,7 +14,7 @@ public class LangUtils {
 	 * @param classType
 	 * @param annotationType
 	 * @param attributeName
-	 * @return the value of the annotation as String or null is something goes wrong
+	 * @return the value of the annotation as String or null if something goes wrong
 	 */
 	public static <T, A extends Annotation> String getClassAnnotationValue(Class<T> classType, Class<A> annotationType, String attributeName) {
 		String value = null;

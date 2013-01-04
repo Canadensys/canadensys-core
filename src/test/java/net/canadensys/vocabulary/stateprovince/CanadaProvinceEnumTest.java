@@ -13,10 +13,10 @@ import org.junit.Test;
 public class CanadaProvinceEnumTest {
 	@Test
 	public void testEnum(){
-		assertNull(CanadaProvince.fromProvinceCode(null));
-		assertNull(CanadaProvince.fromProvinceCode(""));
-		assertNull(CanadaProvince.fromProvinceCode("test"));
-		assertEquals(CanadaProvince.MANITOBA, CanadaProvince.fromProvinceCode("MB"));
-		assertEquals(CanadaProvince.MANITOBA, CanadaProvince.fromProvinceCode("mb"));
+		assertNull(CanadaProvince.fromCode(null));
+		assertNull(CanadaProvince.fromCode(""));
+		assertNull(CanadaProvince.fromCode("test"));
+		assertEquals(CanadaProvince.MANITOBA, CanadaProvince.fromCode("MB"));
+		assertEquals(CanadaProvince.MANITOBA, CanadaProvince.fromCode("mb"));
 	}
 }

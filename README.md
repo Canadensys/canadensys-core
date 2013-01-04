@@ -8,7 +8,7 @@ Features
 * Zip an entire folder (and its contents)
 * Generic number parser : T parseNumber(String value, Class<T> targetClass)
 * Roman numerals support
-* Enum for continents and provinces of Canada
+* Enum for continents, provinces of Canada and states of the US
 
 Usage
 -----
@@ -17,7 +17,7 @@ Maven
 <dependency>
 	<groupId>net.canadensys</groupId>
 	<artifactId>canadensys-core</artifactId>
-	<version>1.2</version>
+	<version>1.3</version>
 </dependency>
 ```
 

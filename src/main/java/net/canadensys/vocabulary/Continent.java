@@ -3,7 +3,7 @@ package net.canadensys.vocabulary;
 import org.apache.commons.lang3.StringUtils;
 
 /**
- * Controlled vocabulary for continents
+ * Controlled vocabulary for continents (seven-continent model)
  * @author canadensys
  *
  */

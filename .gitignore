@@ -5,6 +5,6 @@
 *.classpath
 *.project
 
-bin/**/*
-target/**/*
-build/**/*
+bin/*
+target/*
+build/*

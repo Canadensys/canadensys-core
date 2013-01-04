@@ -2,7 +2,13 @@ package net.canadensys.vocabulary.stateprovince;
 
 import org.apache.commons.lang3.StringUtils;
 
-public enum CanadaProvince {
+/**
+ * Enumeration representing the Canadian provinces and territories
+ * TODO : override valueOf(String)
+ * @author canadensys
+ *
+ */
+public enum CanadaProvince implements StateProvinceEnum{
 	//Provinces
 	ALBERTA("AB","Alberta"),
 	BRITISH_COLUMBIA("BC","British Columbia"),
@@ -20,26 +26,33 @@ public enum CanadaProvince {
 	YUKON("YT","Yukon");
 	
 	private final String provinceCode;
-	private final String provinceTitle;
+	private final String provinceName;
 
-	private CanadaProvince(String provinceCode, String provinceTitle) {
+	private CanadaProvince(String provinceCode, String provinceName) {
 		this.provinceCode = provinceCode;
-		this.provinceTitle = provinceTitle;
+		this.provinceName = provinceName;
 	}
 	
-	public String getProvinceCode(){
+	@Override
+	public String getCode(){
 		return provinceCode;
 	}
 	
-	public String getProvinceTitle(){
-		return provinceTitle;
+	@Override
+	public String getName(){
+		return provinceName;
 	}
 	
-	public static CanadaProvince fromProvinceCode(String code){
+	/**
+	 * Get the enumeration element from the state code.
+	 * @param code
+	 * @return the matching enumeration element or null if the code could not be found.
+	 */
+	public static CanadaProvince fromCode(String code){
 		if (!StringUtils.isBlank(code)){
 			String codeUpper = code.toUpperCase().trim();
 			for (CanadaProvince p : CanadaProvince.values()){
-				if (codeUpper.equals(p.getProvinceCode())){
+				if (codeUpper.equals(p.provinceCode)){
 					return p;
 				}
 			}
