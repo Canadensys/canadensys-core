@@ -28,6 +28,10 @@ Dependencies
 * [Apache Commons IO 2.4](http://commons.apache.org/io/)
 * [Apache Maven 3](http://maven.apache.org/)
 
+How to Contribute
+-----------------
+See this [page](https://github.com/Canadensys/canadensys-core/wiki/HowToContribute) for all the information.
+
 Build
 -----
 ```
