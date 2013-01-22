@@ -3,32 +3,29 @@ package net.canadensys.vocabulary.stateprovince;
 import org.apache.commons.lang3.StringUtils;
 
 /**
- * Enumeration representing the Canadian provinces and territories
+ * Enumeration representing the Belgian provinces
  * TODO : override valueOf(String)
- * @author canadensys
- *
+ * @author peterdesmet
+ * Based on: http://en.wikipedia.org/wiki/Provinces_of_Belgium
  */
-public enum CanadaProvince implements StateProvinceEnum{
+public enum BelgiumProvince implements StateProvinceEnum{
 	//Provinces
-	ALBERTA("AB","Alberta"),
-	BRITISH_COLUMBIA("BC","British Columbia"),
-	MANITOBA("MB","Manitoba"),
-	NEW_BRUNSWICK("NB","New Brunswick"),
-	NEWFOUNDLAND_AND_LABRADOR("NL","Newfoundland and Labrador"),
-	NOVA_SCOTIA("NS","Nova Scotia"),
-	ONTARIO("ON","Ontario"),
-	PRINCE_EDWARD_ISLAND("PE","Prince Edward Island"),
-	QUEBEC("QC","Québec"),
-	SASKATCHEWAN("SK","Saskatchewan"),
-	//Territories
-	NORTHWEST_TERRITORIES("NT","Northwest Territories"),
-	NUNAVUT("NU","Nunavut"),
-	YUKON("YT","Yukon");
+	ANTWERP("AN","Antwerp"),
+	EAST_FLANDERS("OV","East Flanders"),
+	FLEMISH_BRABANT("VB","Flemish Brabant"),
+	HAINAUT("HT","Hainaut"),
+	LIMBURG("LI","Limburg"),
+	LIEGE("LG","Liège"),
+	LUXEMBOURG("LX","Luxembourg"),
+	NAMUR("NA","Namur"),
+	WALLOON_BRABANT("BW","Walloon Brabant"),
+	WEST_FLANDERS("WV","West Flanders");
+	// This does not include the Brussels-Capital Region, as it is not a province.
 	
 	private final String provinceCode;
 	private final String provinceName;
 
-	private CanadaProvince(String provinceCode, String provinceName) {
+	private BelgiumProvince(String provinceCode, String provinceName) {
 		this.provinceCode = provinceCode;
 		this.provinceName = provinceName;
 	}
@@ -48,10 +45,10 @@ public enum CanadaProvince implements StateProvinceEnum{
 	 * @param code
 	 * @return the matching enumeration element or null if the code could not be found.
 	 */
-	public static CanadaProvince fromCode(String code){
+	public static BelgiumProvince fromCode(String code){
 		if (!StringUtils.isBlank(code)){
 			String codeUpper = code.toUpperCase().trim();
-			for (CanadaProvince p : CanadaProvince.values()){
+			for (BelgiumProvince p : BelgiumProvince.values()){
 				if (codeUpper.equals(p.provinceCode)){
 					return p;
 				}
