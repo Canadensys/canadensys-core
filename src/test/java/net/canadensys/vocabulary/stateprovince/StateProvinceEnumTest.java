@@ -14,7 +14,7 @@ import org.junit.Test;
 /**
  * Generic test class for net.canadensys.vocabulary.stateprovince.* enum
  * To test a new enum add it to the static{} block.
- * @author canandesys
+ * @author canadensys
  *
  */
 public class StateProvinceEnumTest {
@@ -25,6 +25,7 @@ public class StateProvinceEnumTest {
 	static{
 		enumToTest.add(CanadaProvince.class);
 		enumToTest.add(USState.class);
+		enumToTest.add(BEProvince.class);
 	}
 	
 	@Test
