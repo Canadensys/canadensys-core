@@ -1,5 +1,6 @@
 package net.canadensys.utils;
 
+
 /**
  * Utility functions related to Number class
  * @author canadensys
@@ -46,5 +47,21 @@ public class NumberUtils {
 		catch(NumberFormatException e){}
 		return null;
 	}
-
+	
+	/**
+	 * Tries to parse value into the targetClass.
+	 * The implementation is no elegant, but it's faster than
+	 * targetClass.getConstructor(String.class).newInstance(value);
+	 * @param value
+	 * @param targetClass
+	 * @param defaultValue default value to return if the value can not be parsed.
+	 * @return T instance of value or defaultValue if the parsing failed
+	 */
+	public static <T> T parseNumber(String value, Class<T> targetClass, T defaultValue){
+		T number = parseNumber(value,targetClass);
+		if(number == null){
+			return defaultValue;
+		}
+		return number;
+	}
 }

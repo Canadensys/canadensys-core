@@ -26,4 +26,14 @@ public class NumberUtilsTest {
 		//null is not handled the same way in Integer than in Double class
 		assertNull(NumberUtils.parseNumber(null, Double.class));
 	}
+	
+	@Test
+	public void testParseNumberWithDefault(){
+		assertEquals(new Integer("0"), NumberUtils.parseNumber(null, Integer.class,0));
+		assertEquals(new Float("0"), NumberUtils.parseNumber(null, Float.class,0f));
+		assertEquals(new Double("-1"), NumberUtils.parseNumber(null, Double.class,-1d));
+		assertEquals(new Short("0"), NumberUtils.parseNumber(null, Short.class,(short)0));
+		assertEquals(new Long("-1"), NumberUtils.parseNumber(null, Long.class,-1l));
+		assertEquals(new Byte("0"), NumberUtils.parseNumber(null, Byte.class,(byte)0));
+	}
 }

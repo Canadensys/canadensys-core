@@ -23,7 +23,7 @@ public class StateProvinceEnumTest {
 	
 	//list of all StateProvince to test
 	static{
-		enumToTest.add(CanadaProvince.class);
+		enumToTest.add(CAProvince.class);
 		enumToTest.add(USState.class);
 	}
 	

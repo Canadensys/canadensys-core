@@ -8,7 +8,7 @@ import org.apache.commons.lang3.StringUtils;
  * @author canadensys
  *
  */
-public enum CanadaProvince implements StateProvinceEnum{
+public enum CAProvince implements StateProvinceEnum{
 	//Provinces
 	ALBERTA("AB","Alberta"),
 	BRITISH_COLUMBIA("BC","British Columbia"),
@@ -28,7 +28,7 @@ public enum CanadaProvince implements StateProvinceEnum{
 	private final String provinceCode;
 	private final String provinceName;
 
-	private CanadaProvince(String provinceCode, String provinceName) {
+	private CAProvince(String provinceCode, String provinceName) {
 		this.provinceCode = provinceCode;
 		this.provinceName = provinceName;
 	}
@@ -48,10 +48,10 @@ public enum CanadaProvince implements StateProvinceEnum{
 	 * @param code
 	 * @return the matching enumeration element or null if the code could not be found.
 	 */
-	public static CanadaProvince fromCode(String code){
+	public static CAProvince fromCode(String code){
 		if (!StringUtils.isBlank(code)){
 			String codeUpper = code.toUpperCase().trim();
-			for (CanadaProvince p : CanadaProvince.values()){
+			for (CAProvince p : CAProvince.values()){
 				if (codeUpper.equals(p.provinceCode)){
 					return p;
 				}
