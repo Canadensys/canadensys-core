@@ -10,6 +10,11 @@ import org.apache.commons.lang3.StringUtils;
  * Sources:
  * http://en.wikipedia.org/wiki/Provinces_of_Belgium
  * http://en.wikipedia.org/wiki/ISO_3166-2:BE
+ * 
+ * Note:
+ * The regions VLG and WAL are both a set of 5 provinces.
+ * The first letter of the province (V, W) indicates to what region these belong.
+ * The region BRU is not a province, nor does it contain any provinces.
  */
 public enum BEProvince implements StateProvinceEnum{
 	//Provinces
