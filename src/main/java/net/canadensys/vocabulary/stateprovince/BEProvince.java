@@ -18,20 +18,20 @@ import org.apache.commons.lang3.StringUtils;
  */
 public enum BEProvince implements StateProvinceEnum{
 	//Provinces
-	ANTWERP("VAN","Antwerp"),
-	EAST_FLANDERS("VOV","East Flanders"),
-	FLEMISH_BRABANT("VBR","Flemish Brabant"),
-	HAINAUT("WHT","Hainaut"),
-	LIMBURG("VLI","Limburg"),
-	LIEGE("WLG","Liège"),
-	LUXEMBOURG("WLX","Luxembourg"),
-	NAMUR("WNA","Namur"),
-	WALLOON_BRABANT("WBR","Walloon Brabant"),
-	WEST_FLANDERS("VWV","West Flanders"),
+	ANTWERP("BE-VAN","Antwerp"),
+	EAST_FLANDERS("BE-VOV","East Flanders"),
+	FLEMISH_BRABANT("BE-VBR","Flemish Brabant"),
+	HAINAUT("BE-WHT","Hainaut"),
+	LIMBURG("BE-VLI","Limburg"),
+	LIEGE("BE-WLG","Liège"),
+	LUXEMBOURG("BE-WLX","Luxembourg"),
+	NAMUR("BE-WNA","Namur"),
+	WALLOON_BRABANT("BE-WBR","Walloon Brabant"),
+	WEST_FLANDERS("BE-VWV","West Flanders"),
 	//Regions
-	BRUSSELS_CAPITAL_REGION("BRU","Brussels-Capital Region"),
-	FLEMISH_REGION("VLG","Flemish Region"),
-	WALLOON_REGION("WAL","Walloon Region");
+	BRUSSELS_CAPITAL_REGION("BE-BRU","Brussels-Capital Region"),
+	FLEMISH_REGION("BE-VLG","Flemish Region"),
+	WALLOON_REGION("BE-WAL","Walloon Region");
 		
 	private final String provinceCode;
 	private final String provinceName;

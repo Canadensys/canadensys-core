@@ -9,7 +9,7 @@ package net.canadensys.vocabulary.stateprovince;
 public interface StateProvinceEnum {
 	
 	/**
-	 * Return the code (abbreviation) of this state/province.
+	 * Return the ISO 3166-2 code of this state/province.
 	 * The code should be in capital letters.
 	 * @return
 	 */

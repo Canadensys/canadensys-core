@@ -6,24 +6,27 @@ import org.apache.commons.lang3.StringUtils;
  * Enumeration representing the Canadian provinces and territories
  * TODO : override valueOf(String)
  * @author canadensys
+ * 
+ * Source:
+ * http://en.wikipedia.org/wiki/ISO_3166-2:CA
  *
  */
 public enum CAProvince implements StateProvinceEnum{
 	//Provinces
-	ALBERTA("AB","Alberta"),
-	BRITISH_COLUMBIA("BC","British Columbia"),
-	MANITOBA("MB","Manitoba"),
-	NEW_BRUNSWICK("NB","New Brunswick"),
-	NEWFOUNDLAND_AND_LABRADOR("NL","Newfoundland and Labrador"),
-	NOVA_SCOTIA("NS","Nova Scotia"),
-	ONTARIO("ON","Ontario"),
-	PRINCE_EDWARD_ISLAND("PE","Prince Edward Island"),
-	QUEBEC("QC","Québec"),
-	SASKATCHEWAN("SK","Saskatchewan"),
+	ALBERTA("CA-AB","Alberta"),
+	BRITISH_COLUMBIA("CA-BC","British Columbia"),
+	MANITOBA("CA-MB","Manitoba"),
+	NEW_BRUNSWICK("CA-NB","New Brunswick"),
+	NEWFOUNDLAND_AND_LABRADOR("CA-NL","Newfoundland and Labrador"),
+	NOVA_SCOTIA("CA-NS","Nova Scotia"),
+	ONTARIO("CA-ON","Ontario"),
+	PRINCE_EDWARD_ISLAND("CA-PE","Prince Edward Island"),
+	QUEBEC("CA-QC","Québec"),
+	SASKATCHEWAN("CA-SK","Saskatchewan"),
 	//Territories
-	NORTHWEST_TERRITORIES("NT","Northwest Territories"),
-	NUNAVUT("NU","Nunavut"),
-	YUKON("YT","Yukon");
+	NORTHWEST_TERRITORIES("CA-NT","Northwest Territories"),
+	NUNAVUT("CA-NU","Nunavut"),
+	YUKON("CA-YT","Yukon");
 	
 	private final String provinceCode;
 	private final String provinceName;
