@@ -30,7 +30,7 @@ Dependencies
 
 How to Contribute
 -----------------
-See this [page](https://github.com/Canadensys/canadensys-core/wiki/HowToContribute) for all the information.
+See this [page](https://github.com/Canadensys/canadensys-core/wiki/How-to-contribute) for all the information.
 
 Build
 -----
