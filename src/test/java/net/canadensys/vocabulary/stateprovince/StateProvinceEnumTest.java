@@ -26,6 +26,7 @@ public class StateProvinceEnumTest {
 		enumToTest.add(CAProvince.class);
 		enumToTest.add(USState.class);
 		enumToTest.add(BEProvince.class);
+		enumToTest.add(CODepartment.class);
 	}
 	
 	@Test
