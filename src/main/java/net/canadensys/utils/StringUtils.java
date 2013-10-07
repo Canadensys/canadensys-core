@@ -14,7 +14,7 @@ public class StringUtils {
 	
 	/**
 	 * Make all elements of a String array upper case.
-	 * @param strings string array, may contain null item
+	 * @param strings string array, may contain null item but can't be null
 	 * @return array containing all provided elements upper case
 	 */
 	public static String[] allUpperCase(String... strings){
@@ -29,7 +29,7 @@ public class StringUtils {
 	
 	/**
 	 * Make all elements of a String array lower case.
-	 * @param strings string array, may contain null item
+	 * @param strings string array, may contain null item but can't be null
 	 * @return array containing all provided elements lower case
 	 */
 	public static String[] allLowerCase(String... strings){
