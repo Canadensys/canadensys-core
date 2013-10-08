@@ -10,7 +10,7 @@
 
   <groupId>net.canadensys</groupId>
   <artifactId>canadensys-core</artifactId>
-  <version>1.6-SNAPSHOT</version>
+  <version>1.6</version>
   <packaging>jar</packaging>
   <name>Canadensys core</name>
   <description>The Canadensys core library</description>
