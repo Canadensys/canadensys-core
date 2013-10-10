@@ -5,7 +5,7 @@ Collection of utility functions used by Canadensys projects.
 
 Code Status
 -----------
-[![Build Status](https://travis-ci.org/canadensys/canadensys-core.png)](https://travis-ci.org/canadensys/canadensys-core)
+[![Build Status](https://travis-ci.org/Canadensys/canadensys-core.png)](https://travis-ci.org/Canadensys/canadensys-core)
 
 Features
 --------
