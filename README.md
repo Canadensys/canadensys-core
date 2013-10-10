@@ -3,6 +3,10 @@ canadensys-core
 
 Collection of utility functions used by Canadensys projects.
 
+Code Status
+-----------
+[![Build Status](https://travis-ci.org/canadensys/canadensys-core.png)](https://travis-ci.org/canadensys/canadensys-core)
+
 Features
 --------
 * Zip an entire folder (and its contents)
