@@ -11,7 +11,7 @@ import org.junit.Test;
 
 /**
  * Test class for net.canadensys.comparator.UnaccentStringComparator
- * @author canandesys
+ * @author canadensys
  *
  */
 public class UnaccentStringComparatorTest {
