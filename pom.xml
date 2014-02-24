@@ -40,6 +40,8 @@
 		<!-- maven-compiler-plugin config -->
 		<maven.compiler.source>6</maven.compiler.source>
 		<maven.compiler.target>6</maven.compiler.target>
+		
+		<lang3.version>3.2.1</lang3.version>
 	</properties>
 
 	<prerequisites>
@@ -51,7 +53,7 @@
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
-			<version>3.1</version>
+			<version>${lang3.version}</version>
 		</dependency>
 
 		<!-- Apache compress -->

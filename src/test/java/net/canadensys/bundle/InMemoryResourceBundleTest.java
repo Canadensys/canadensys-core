@@ -8,7 +8,7 @@ import java.util.MissingResourceException;
 import org.junit.Test;
 
 /**
- * Test class for net.canadensys.bundle.InMemoryResourceBundle
+ * Test class for net.canadensys.bundle.InMemoryResourceBundle.
  * @author canadensys
  *
  */
