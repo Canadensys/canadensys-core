@@ -1,7 +1,7 @@
 Version History
 ===============
-Version 1.8 2014-02-25
-* Added InMemoryResourceBundle
+Version 1.8 2014-03-10
+* Added InMemoryResourceBundle, UTF8PropertyResourceBundle
 
 Version 1.7 2014-01-24
 * Update ZipUtils to handle enclosing folders

@@ -10,6 +10,7 @@ Code Status
 Features
 --------
 * Zip an entire folder (and its contents)
+* UTF-8 and in-memory ResourceBundle
 * Generic number parser : T parseNumber(String value, Class<T> targetClass)
 * Roman numerals support
 * Enum for continents, provinces/states of Canada, US, Belgium and Colombia
