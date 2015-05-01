@@ -3,6 +3,9 @@ package net.canadensys.vocabulary.stateprovince;
 import org.apache.commons.lang3.StringUtils;
 
 /**
+ * @Deprecated
+ * https://github.com/WingLongitude/shared-dictionaries/blob/master/src/main/resources/dictionaries/geography/BE_ISO3166-2.txt
+ * 
  * Enumeration representing the Belgian provinces
  * TODO : override valueOf(String)
  * @author peterdesmet
@@ -16,6 +19,7 @@ import org.apache.commons.lang3.StringUtils;
  * The first letter of the province (V, W) indicates to what region these belong.
  * The region BRU is not a province, nor does it contain any provinces.
  */
+@Deprecated
 public enum BEProvince implements StateProvinceEnum{
 	//Provinces
 	ANTWERP("BE-VAN","Antwerp"),

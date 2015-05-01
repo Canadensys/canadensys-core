@@ -3,6 +3,9 @@ package net.canadensys.vocabulary.stateprovince;
 import org.apache.commons.lang3.StringUtils;
 
 /**
+ * @Deprecated
+ * https://github.com/WingLongitude/shared-dictionaries/blob/master/src/main/resources/dictionaries/geography/US_ISO3166-2.txt
+ * 
  * Enumeration representing the United States of America states.
  * TODO : override valueOf(String)
  * 
@@ -12,6 +15,7 @@ import org.apache.commons.lang3.StringUtils;
  * @author canadensys
  *
  */
+@Deprecated
 public enum USState implements StateProvinceEnum {
 
 	ALABAMA("US-AL", "Alabama"),

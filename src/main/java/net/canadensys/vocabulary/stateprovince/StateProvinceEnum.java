@@ -6,6 +6,7 @@ package net.canadensys.vocabulary.stateprovince;
  * @author canadensys
  *
  */
+@Deprecated
 public interface StateProvinceEnum {
 	
 	/**

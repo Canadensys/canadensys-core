@@ -75,7 +75,7 @@ public class InMemoryResourceBundle {
 			lookup.put(formatKey(key), value);
 			inverseLookup.put(formatKey(value), key);
 		}
-		//discard resource bundle;
+		//discard resource bundle, we could call clearCache()
 		bundle = null;
 	}
 	

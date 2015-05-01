@@ -4,6 +4,9 @@ import org.apache.commons.lang3.StringUtils;
 
 
 /**
+ * @Deprecated this should be maintained in a dictionary file.
+ * https://github.com/WingLongitude/shared-dictionaries/blob/master/src/main/resources/dictionaries/geography/CO_ISO3166-2.txt
+ *  
  * Enumeration representing the Colombia departments
  * TODO : override valueOf(String)
  * @author canadensys
@@ -12,6 +15,7 @@ import org.apache.commons.lang3.StringUtils;
  * http://en.wikipedia.org/wiki/ISO_3166-2:CO
  * 
  */
+@Deprecated
 public enum CODepartment implements StateProvinceEnum{
 		//Capital district
 		DISTRITO_CAPITAL_BOGOTA("CO-DC","Distrito Capital de Bogotá"),

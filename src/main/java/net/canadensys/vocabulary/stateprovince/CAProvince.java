@@ -3,6 +3,9 @@ package net.canadensys.vocabulary.stateprovince;
 import org.apache.commons.lang3.StringUtils;
 
 /**
+ * @Deprecated this should be maintained in a dictionary file.
+ * https://github.com/WingLongitude/shared-dictionaries/blob/master/src/main/resources/dictionaries/geography/CA_ISO3166-2.txt
+ * 
  * Enumeration representing the Canadian provinces and territories
  * TODO : override valueOf(String)
  * @author canadensys
@@ -11,6 +14,7 @@ import org.apache.commons.lang3.StringUtils;
  * http://en.wikipedia.org/wiki/ISO_3166-2:CA
  *
  */
+@Deprecated
 public enum CAProvince implements StateProvinceEnum{
 	//Provinces
 	ALBERTA("CA-AB","Alberta"),
